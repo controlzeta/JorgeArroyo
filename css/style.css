@@ -192,6 +192,7 @@ header {
 
 #servicios {
   padding: 50px 0;
+  height: 100%;
 }
 
 .servicios-grid {
