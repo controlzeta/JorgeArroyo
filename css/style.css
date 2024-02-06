@@ -1,247 +1,438 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; /* Blanco */
+  color: #333333; /* Gris oscuro */
+  font-family: sans-serif;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+h1, h2, h3, h4, h5, h6 {
+  color: #000000; /* Negro */
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+header {
+  background-color: #007bff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-/*
- * A better looking default horizontal rule
- */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
 
-hr {
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #0056b3; /* Azul secundario */
+}
+
+a {
+  color: #007bff; /* Azul primario */
+  text-decoration: none;
+}
+
+.splash {
+  background-color: #f6fbff; /* Azul primario */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top:50px;
+  height: 100vh;
+}
+
+.splash img {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  background-color: #ffffff; /* Blanco */
+  color: #007bff; /* Azul primario */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inicio {
+  
+  background-color: #59aff9;
+
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  border-left: 5px solid #007bff;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.boton {
+  background-color: #007bff; /* Azul primario */
+  color: #ffffff; /* Blanco */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #0056b3; /* Azul secundario */
+}
+
+/* Parallax */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Media queries */
+
+
+
+/* Colores */
+
+body {
+  background-color: #ffffff; /* Blanco */
+  color: #333333; /* Gris oscuro */
+}
+
+a {
+  color: #007bff; /* Azul primario */
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+
+
+/* Menú */
+
+header {
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+
+/* Sticky */
+
+.sticky {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#servicios {
+  padding: 50px 0;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicio {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.servicio h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.servicio p {
+  padding: 10px;
+}
+
+.servicio a {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+.servicio a:hover {
+  background-color: #0056b3;
 }
 
-/*
- * Remove default fieldset styles.
- */
 
-fieldset {
-  border: 0;
+/* Colores */
+
+#testimonios {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.testimonio {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.testimonio p {
+  font-style: italic;
+}
+
+.testimonio h4 {
+  text-align: center;
   margin: 0;
-  padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+.testimonio .cargo {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
+.whatsapp {
   height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  width: 18px;
+  padding: 4px;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+/* Colores */
 
-.invisible {
-  visibility: hidden;
+#contacto {
+  background-color:#477399;
+  padding: 50px 0;
 }
 
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+#contacto h2{
+  
 }
 
-.clearfix::after {
-  clear: both;
+
+.formulario {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.formulario label {
+  font-weight: bold;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+.formulario textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
+.formulario button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
+
+#contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.columna-izquierda, .formulario {
+  background-color: #f0f8ff24;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.columna-derecha, .informacion {
+  padding: 20px;
+}
+
+#testimonios {
+  margin: 20px auto;
+}
+
+#testimonios h2{
+  padding-bottom:2em
+}
+
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tarjeta-testimonio {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tarjeta-testimonio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.tarjeta-testimonio h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tarjeta-testimonio p {
+  margin-top: 10px;
+}
+
+footer{
+  background-color: #494949;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .splash img {
+    width: 50%;
+  }
+  .testimonio {
+    float: none;
+    width: 100%;
+  }
+
+  #contacto {
+    grid-template-columns: 1fr;
+  }
+
+  #contacto .columna-izquierda{
+    width: 100%;
+    display: inline-grid;
+  }
+
+  .grid-testimonios {
+    grid-template-columns: 1fr;
+  }
+
+    nav {
+    flex-direction: column;
+  }
+
+  .servicios-grid {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+  section {
+    flex-direction: column;
+  }
+  #googlemaps {
+    width: 90%;
+    height: 400px;
+    display: flex;
+  }
+}

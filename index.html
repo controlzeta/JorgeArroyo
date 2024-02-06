@@ -1,33 +1,115 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica de Rehabilitación y Ortodoncia Doctor Jorge Arroyo</title>
+  <meta property="og:title" content="Clínica de Rehabilitación y Ortodoncia Doctor Jorge Arroyo">
+  <meta property="og:description" content="Tu sonrisa, nuestra pasión.">
+  <meta property="og:image" content="https://www.tuimagen.com/logo.png">
+  <meta property="og:url" content="https://www.tuclinica.com">
+  <meta property="og:site_name" content="Clínica de Rehabilitación y Ortodoncia Doctor Jorge Arroyo">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="#inicio">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <div class="splash">
+    <img src="img/logo.png" alt="Logotipo de clínica">
+    <h1>Tu sonrisa, nuestra pasión: </h1>
+    <p> Transformando sonrisas, cambiando vidas.</p>
+    <a href="#inicio">Conócenos</a>
+  </div>
+  <section id="inicio">
+    <h2>Rehabilitación Integral y Ortodoncia para una sonrisa perfecta</h2>
+    <h3>Cambiamos vidas transformando sonrisas</h3>
+    <p>
+      En nuestra clínica ofrecemos una amplia gama de servicios de rehabilitación integral y ortodoncia para ayudarte a obtener la sonrisa que siempre has deseado. Contamos con un equipo de profesionales altamente calificados y experimentados que utilizan las últimas tecnologías para brindarte la mejor atención posible.
+    </p>
+    <a href="servicios.html">Conoce más sobre nuestros servicios</a>
+  </section>
+  <section id="beneficios" class="parallax">
+    <h2>Beneficios de elegir nuestra clínica:</h2>
+    <ul>
+      <li>Más de 30 años de experiencia</li>
+      <li>Tecnología de última generación</li>
+      <li>Atención personalizada</li>
+      <li>Aceptamos Tarjeta de Débito y Crédito</li>
+      <li>Planes de financiamiento</li>
+    </ul>
+  </section>
+  <section id="testimonios">
+    <h2>Testimonios de nuestros pacientes:</h2>
+    <div class="grid-testimonios">
+      <div class="tarjeta-testimonio">
+        <img src="img/testimonio1.png" alt="Testimonio 1">
+        <h3>Juan Z.</h3>
+        <p>"Gracias al Doctor Jorge Arroyo, he recuperado la confianza en mi sonrisa."</p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <img src="img/testimonio2.png" alt="Testimonio 1">
+        <h3>María del Carmen S.</h3>
+        <p>"Sufría de dolores dentales. Tras visitar al Doctor, recupere mi sonrisa y disfruto de comer sin molestias.</p>
+        
+      </div>
+      <div class="tarjeta-testimonio">
+        <img src="img/testimonio3.png" alt="Testimonio 1">
+        <h3>Mayra G.</h3>
+        <p>"El trato y la atención en esta clínica son excelentes."</p>
+      </div>
+    </div>
+  </section>
+  <section id="contacto">
+    <div class="columna-izquierda">
+      <h2>Contáctanos</h2>
+      <form class="formulario" >
+        <b>Dirección:</b> Avenida Xonacatepec 41-A, INFONAVIT Amalucan<br> 
+        CP 72310 Heroica Puebla de Zaragoza, Pue., México<br>
+        <b>Teléfono:</b> (222) 287-0739<br>
+        <b>Horario:</b> Lunes a Viernes 11:00 - 14:00 y 16:00 - 20:00 hrs <br>
+        Sábados 11:00 - 14:00hrs<br><br><br>
+        <a href="tel:2222870739" type="tel" title="Número de atención al cliente">Contactanos</a>
 
+        <!-- <input type="text" name="nombre" placeholder="Nombre">
+        <input type="email" name="correo" placeholder="Correo electrónico">
+        <input type="teléfono" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+        <a>
+          <input onclick="openEmail()" type="submit" value="Enviar">
+        </a> -->
+      </form>
+    </div>
+    <div class="columna-derecha">
+      <iframe id="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60343.213032263644!2d-98.17568085870283!3d19.043906713498906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfea65882cde81%3A0x963e3a0c47e50024!2sCl%C3%ADnica%20de%20Rehabilitaci%C3%B3n%20y%20Ortodoncia%20Doctor%20Jorge%20Arroyo!5e0!3m2!1ses-419!2sus!4v1706983348192!5m2!1ses-419!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <footer>
+    <p>
+      <strong>Clínica de Rehabilitación y Ortodoncia Doctor Jorge Arroyo</strong><br>
+      Dirección: Avenida Xonacatepec 41-A, INFONAVIT Amalucan, 72310 Heroica Puebla de Zaragoza, Pue., México<br>
+      Teléfono: (222) 287-0739<br>
+      Horario: Lunes a Viernes 11:00 - 14:00 y 16:00 - 20:00 hrs Sábados 11:00 - 14:00hrs<br>
+      Redes sociales: <a href="https://www.facebook.com/ClinicaDentalDeOrtodonciaRehabilitacionIntegral" target="_blank">Facebook</a> 
+      <a href="https://api.whatsapp.com/send?phone=5212223109240&text=Hola%20necesito%20una%20cita">
+        WhatsApp<img class="whatsapp" src="img/whatsapp_icon.png" alt="Compartir en WhatsApp">
+      </a>    
+    </p>
+    <p>&copy; <span id="currentYear">2024</span> Clínica Dental de Rehabilitación Integral y Ortodoncia</p>
+  </footer>
 </body>
-
 </html>
