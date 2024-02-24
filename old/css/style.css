@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; /* Blanco */
+  color: #333333; /* Gris oscuro */
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000; /* Negro */
+}
+
+header {
+  background-color: #007bff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #0056b3; /* Azul secundario */
+}
+
+a {
+  color: #007bff; /* Azul primario */
+  text-decoration: none;
+}
+
+.splash {
+  background-color: #f6fbff; /* Azul primario */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top:50px;
+  height: 100vh;
+}
+
+.splash img {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  background-color: #ffffff; /* Blanco */
+  color: #007bff; /* Azul primario */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inicio {
+  
+  background-color: #59aff9;
+
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  border-left: 5px solid #007bff;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.boton {
+  background-color: #007bff; /* Azul primario */
+  color: #ffffff; /* Blanco */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #0056b3; /* Azul secundario */
+}
+
+/* Parallax */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Media queries */
+
+
+
+/* Colores */
+
+body {
+  background-color: #ffffff; /* Blanco */
+  color: #333333; /* Gris oscuro */
+}
+
+a {
+  color: #007bff; /* Azul primario */
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+
+
+/* Menú */
+
+header {
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+
+/* Sticky */
+
+.sticky {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#servicios {
+  padding: 50px 0;
+  height: 100%;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servicio {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.servicio h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.servicio p {
+  padding: 10px;
+}
+
+.servicio a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.servicio a:hover {
+  background-color: #0056b3;
+}
+
+
+/* Colores */
+
+#testimonios {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.testimonio {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.testimonio p {
+  font-style: italic;
+}
+
+.testimonio h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.testimonio .cargo {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.whatsapp {
+  height: auto;
+  width: 18px;
+  padding: 4px;
+}
+
+/* Colores */
+
+#contacto {
+  background-color:#477399;
+  padding: 50px 0;
+}
+
+#contacto h2{
+  
+}
+
+
+.formulario {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.formulario textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.formulario button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
+
+#contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.columna-izquierda, .formulario {
+  background-color: #f0f8ff24;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.columna-derecha, .informacion {
+  padding: 20px;
+}
+
+#testimonios {
+  margin: 20px auto;
+}
+
+#testimonios h2{
+  padding-bottom:2em
+}
+
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tarjeta-testimonio {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tarjeta-testimonio img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.tarjeta-testimonio h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tarjeta-testimonio p {
+  margin-top: 10px;
+}
+
+footer{
+  background-color: #494949;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .splash img {
+    width: 50%;
+  }
+  .testimonio {
+    float: none;
+    width: 100%;
+  }
+
+  #contacto {
+    grid-template-columns: 1fr;
+  }
+
+  #contacto .columna-izquierda{
+    width: 100%;
+    display: inline-grid;
+  }
+
+  .grid-testimonios {
+    grid-template-columns: 1fr;
+  }
+
+    nav {
+    flex-direction: column;
+  }
+
+  .servicios-grid {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+  section {
+    flex-direction: column;
+  }
+  #googlemaps {
+    width: 90%;
+    height: 400px;
+    display: flex;
+  }
+}
